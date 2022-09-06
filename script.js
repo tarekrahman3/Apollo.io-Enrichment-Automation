@@ -1,5 +1,9 @@
-async function wait(ms) {
-	await new Promise(r => setTimeout(r, ms));
+function wait(time) {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve();
+        }, time);
+    });
 }
 
 for (var i=1; i<20; i++){
