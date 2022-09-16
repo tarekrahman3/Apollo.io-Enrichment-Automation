@@ -42,7 +42,7 @@ for (var i = 1; i < 20; i++) {
 	let enrichEmails = document
 		.querySelector(
 			"body > div.apolloio-css-vars-reset.zp-overlay > div > div > div > a:nth-child(2)"
-		).click();
+		);
 	enrichEmails.click();
 	console.log(
 		'clicked enrich emails button'
@@ -50,14 +50,14 @@ for (var i = 1; i < 20; i++) {
 	console.log(
 		'waiting for enrich email confirmation popup'
 	);
-	await wait(3000);
+	await wait(5000);
 	console.log(
 		'attempting to click confirm enrich emails'
 	);
 	let confirmEnrichment = document
 		.querySelector(
 			"body > div.apolloio-css-vars-reset.zp.zp-modal.zp_1aV2y > div.zp_2gRpu > div > div > div.zp_2N-K8 > button"
-		).click();
+		);
 	confirmEnrichment.click();
 	console.log(
 		'clicked confirm enrich emails'
@@ -65,9 +65,7 @@ for (var i = 1; i < 20; i++) {
 	console.log(
 		'waiting for enrichment')
 	await wait(10000);
-	document.querySelector(
-		"#provider-mounter > div > div:nth-child(2) > div:nth-child(2) > div > div.zp_1DSCs > div > div.zp_3Lzj1 > div > div.zp_p7Ra4 > div > div > div > div > div.zp_1ybjt > div > div.zp_1x8SC > div > div > div > div:nth-child(1) > div.zp_1Gu3n > button:nth-child(3)"
-	).click();
+	document.querySelector("#provider-mounter > div > div:nth-child(2) > div:nth-child(2) > div > div.zp_1DSCs > div > div.zp_3Lzj1 > div > div.zp_p7Ra4 > div > div > div > div > div.zp_1ybjt > div > div.zp_1x8SC > div > div > div > div:nth-child(1) > div.zp_1Gu3n > button:nth-child(4) > i.zp-icon.apollo-icon.apollo-icon-caret-down-small.zp_2BRav.zp_35LDu.zp_2_675").click();
 	await new Promise(r => setTimeout(r,
 		1000));
 	document.querySelector(
