@@ -6,7 +6,7 @@ function wait(time) {
 	});
 }
 
-for (var i = 1; i < 24; i++) {
+for (var i = 1; i < 15; i++) {
 	document.querySelector(
 		'#provider-mounter > div > div:nth-child(2) > div:nth-child(2) > div > div.zp_1DSCs > div > div.zp_3Lzj1 > div > div.zp_p7Ra4 > div > div > div > div > div.zp_1ybjt > div > div.zp_1x8SC > div > div > div > div:nth-child(1) > div.zp_3Lc6D > button > div > div'
 	).click();
@@ -67,12 +67,12 @@ for (var i = 1; i < 24; i++) {
 	await wait(15000);
 	document.querySelector("#provider-mounter > div > div:nth-child(2) > div:nth-child(2) > div > div.zp_1DSCs > div > div.zp_3Lzj1 > div > div.zp_p7Ra4 > div > div > div > div > div.zp_1ybjt > div > div.zp_1x8SC > div > div > div > div:nth-child(1) > div.zp_1Gu3n > button:nth-child(3) > div").click();
 	await new Promise(r => setTimeout(r,
-		1000));
+		3000));
 	document.querySelector(
 		"body > div.apolloio-css-vars-reset.zp-overlay > div > div > div > a:nth-child(2)"
 	).click();
 	await new Promise(r => setTimeout(r,
-		2000));
+		3000));
 	document.querySelector(
 		"body > div.apolloio-css-vars-reset.zp.zp-modal.zp_1aV2y > div.zp_2gRpu > div > div > div.zp_3wjKN > form > div > div > div > div > div > div:nth-child(2) > label > div"
 	).click();
@@ -80,6 +80,6 @@ for (var i = 1; i < 24; i++) {
 		"body > div.apolloio-css-vars-reset.zp.zp-modal.zp_1aV2y > div.zp_2gRpu > div > div > div.zp_2N-K8 > button"
 	).click();
 	await new Promise(r => setTimeout(r,
-		7000));
+		8000));
 	console.log('at loop - ', i)
 }
