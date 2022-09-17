@@ -6,7 +6,7 @@ function wait(time) {
 	});
 }
 
-const pages = totalLeads(Number(prompt()));
+const pages = Math.floor(Number(prompt()));
 
 for (var i = 1; i < pages; i++) {
 	document.querySelector(
