@@ -65,7 +65,11 @@ for (var i = 1; i < 15; i++) {
 	console.log(
 		'waiting for enrichment')
 	await wait(15000);
-	document.querySelector("#provider-mounter > div > div:nth-child(2) > div:nth-child(2) > div > div.zp_1DSCs > div > div.zp_3Lzj1 > div > div.zp_p7Ra4 > div > div > div > div > div.zp_1ybjt > div > div.zp_1x8SC > div > div > div > div:nth-child(1) > div.zp_1Gu3n > button:nth-child(3) > div").click();
+	document.getElementsByClassName('zp_2cHnw').forEach((el)=>{
+	    if (el.innerText=='Lists'){
+		el.click()
+	    }
+	});
 	await new Promise(r => setTimeout(r,
 		3000));
 	document.querySelector(
